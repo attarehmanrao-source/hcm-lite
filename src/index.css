@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --color-emerald-deep: #0B3D2E;
+    --color-primary-green: #146C43;
+    --color-gold-accent: #D4AF37;
+    --color-soft-bg: #F5F8F5;
+    --color-main-text: #182B24;
+    --color-muted-text: #64748B;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: var(--color-soft-bg);
+    color: var(--color-main-text);
+  }
+
+  .dark body {
+    background-color: #061913;
+    color: #F5F8F5;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E3A2F;
+}
+
+/* Smooth motion utility classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(20, 108, 67, 0.12);
+}
+
+.dark .glass-panel {
+  background: rgba(11, 61, 46, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Gold shimmer highlight */
+.gold-glow {
+  box-shadow: 0 0 20px -3px rgba(212, 175, 55, 0.35);
+}
+
+.emerald-glow {
+  box-shadow: 0 4px 20px -2px rgba(20, 108, 67, 0.25);
+}

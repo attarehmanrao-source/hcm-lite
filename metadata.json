@@ -1,0 +1,6 @@
+{
+  "name": "HCM Lite - AI-Assisted Human Resource Management System",
+  "description": "Production-grade, clean-slate Human Capital Management (HCM Lite) platform featuring RBAC, Attendance, Leave workflows, Payroll engine, Automated Payslips, and Gemini-powered HR Assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
